@@ -49,6 +49,8 @@ void mergeSort(int arr[], int n)
                 j++;
                 k++;
             }
+            delete[] L;
+            delete[] R;
         }
     }
 }
@@ -70,6 +72,6 @@ int main() {
     std::cout << std::endl;
 
 
-    delete array;
+    delete[] array;
     return 0;
 }
